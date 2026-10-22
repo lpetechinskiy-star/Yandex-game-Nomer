@@ -11,8 +11,7 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "zip": "node scripts/zip.mjs",
-    "zip:serve": "node scripts/serve-zip.mjs",
-    "cars:placeholders": "node scripts/gen-car-placeholders.mjs"
+    "zip:serve": "node scripts/serve-zip.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.20.5",

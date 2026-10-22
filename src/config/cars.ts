@@ -18,10 +18,11 @@ export interface CarDef {
 }
 
 export const CARS: readonly CarDef[] = [
-  { id: "2109", img: "cars/vaz-2109.svg", cls: 1.2, plateX: 50, plateY: 73.6, plateW: 15 },
-  { id: "vesta", img: "cars/lada-vesta.svg", cls: 1.4, plateX: 50, plateY: 73.6, plateW: 15 },
-  { id: "merc", img: "cars/mercedes-e.svg", cls: 2.2, plateX: 50, plateY: 69.6, plateW: 15 },
-  { id: "lambo", img: "cars/lamborghini.svg", cls: 4, plateX: 50, plateY: 66.8, plateW: 15 },
+  { id: "2109", img: "cars/vaz-2109.jpg", cls: 1.2, plateX: 50.1, plateY: 53.6, plateW: 14.2 },
+  { id: "merc", img: "cars/mercedes-e.jpg", cls: 2.2, plateX: 50.25, plateY: 53.4, plateW: 11.3 },
+  { id: "bmw", img: "cars/bmw-m5.jpg", cls: 2.8, plateX: 50.25, plateY: 53, plateW: 14 },
+  { id: "gclass", img: "cars/mercedes-g.jpg", cls: 3.2, plateX: 50.25, plateY: 69.7, plateW: 11.5 },
+  { id: "lambo", img: "cars/lamborghini.jpg", cls: 4, plateX: 42, plateY: 66.7, plateW: 17.4 },
 ];
 
 /** Номер США почти квадратный: его ширина = plateW × этот множитель. */
@@ -40,7 +41,9 @@ export interface OfferDef {
 }
 
 export const OFFERS: readonly OfferDef[] = [
-  { id: "lada", cars: ["2109", "vesta"], ads: 1, head: "blue" },
+  { id: "lada", cars: ["2109"], ads: 1, head: "blue" },
   { id: "merc", cars: ["merc"], ads: 3, adBonus: 2500, head: "black" },
+  { id: "bmw", cars: ["bmw"], price: 60_000, head: "blue" },
+  { id: "gclass", cars: ["gclass"], price: 100_000, head: "black" },
   { id: "lambo", cars: ["lambo"], price: 150_000, head: "gold" },
 ];
