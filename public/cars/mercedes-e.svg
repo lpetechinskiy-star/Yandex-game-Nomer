@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560">
+<!-- Заглушка mercedes-e. Замените на настоящую картинку и поправьте plateX/plateY/plateW в src/config/cars.ts. -->
+<defs>
+  <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#707277"/><stop offset=".45" stop-color="#23262d"/><stop offset="1" stop-color="#17191d"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5d6b7c"/><stop offset=".6" stop-color="#1f2731"/><stop offset="1" stop-color="#11161c"/></linearGradient>
+  <linearGradient id="lamp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7a6b"/><stop offset="1" stop-color="#a3100a"/></linearGradient>
+  <radialGradient id="shadow"><stop offset="0" stop-color="#000" stop-opacity=".45"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+</defs>
+<ellipse cx="500" cy="500" rx="388" ry="34" fill="url(#shadow)"/>
+<rect x="200" y="396" width="84" height="104" rx="16" fill="#18191b"/>
+<rect x="716" y="396" width="84" height="104" rx="16" fill="#18191b"/>
+<path d="M198 252 l-44 -6 l-4 22 l46 8 z" fill="#17191d"/>
+<path d="M802 252 l44 -6 l4 22 l-46 8 z" fill="#17191d"/>
+<path d="M204 286 L312 184 Q316 176 328 176 L672 176 Q684 176 688 184 L796 286 Z" fill="url(#body)"/>
+<path d="M249.5 256 L314.3 190 L685.7 190 L750.5 256 Z" fill="url(#glass)"/>
+<path d="M344.3 198 L434.3 198 L309.5 250 L269.5 250 Z" fill="#fff" opacity=".08"/>
+<path d="M192 280 Q500 260 808 280 Q822 286 818 316 L812 432 Q810 446 792 446 L208 446 Q190 446 188 432 L182 316 Q178 286 192 280 Z" fill="url(#body)"/>
+<path d="M252 304 Q500 290 748 304" stroke="#17191d" stroke-width="3" fill="none" opacity=".7"/>
+<path d="M192 302 L350 306 L350 330 L204 334 Z" fill="url(#lamp)"/><path d="M208 318 L342 318" stroke="#ffe3dc" stroke-width="2.5" opacity=".8"/>
+<path d="M808 302 L650 306 L650 330 L796 334 Z" fill="url(#lamp)"/><path d="M792 318 L658 318" stroke="#ffe3dc" stroke-width="2.5" opacity=".8"/>
+<rect x="350" y="316" width="300" height="5" rx="2.5" fill="#d9dde3"/>
+<circle cx="500" cy="326" r="13" fill="#d9dde3" stroke="#17191d" stroke-width="3"/>
+<path d="M186 351.84615384615387 Q500 341.84615384615387 814 351.84615384615387 L810 434 Q808 452 790 452 L210 452 Q192 452 190 434 Z" fill="#1f2128"/>
+<rect x="242" y="424" width="516" height="6" rx="3" fill="#cfd4da"/>
+<ellipse cx="272" cy="450" rx="22" ry="7" fill="#2a2a2a"/>
+<rect x="417" y="366.8" width="166" height="46.3" rx="6" fill="#141518" opacity=".85"/>
+</svg>

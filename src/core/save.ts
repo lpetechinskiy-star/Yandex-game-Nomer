@@ -44,6 +44,17 @@ export async function loadGame(cloud: CloudStore | null, rng: Rng): Promise<Game
   return restore(best, rng) ?? restore(local, rng) ?? newGame(rng);
 }
 
+/** Облачное сохранение, если оно свежее текущего (после входа в аккаунт посреди игры). */
+export async function newerCloudSave(cloud: CloudStore, current: GameState, rng: Rng): Promise<GameState | null> {
+  if (!cloud.available()) return null;
+  try {
+    const remote = await cloud.load();
+    return savedAt(remote) > current.savedAt ? restore(remote, rng) : null;
+  } catch {
+    return null;
+  }
+}
+
 /** Сохраняет в localStorage сразу, в облако — не чаще раза в cloudDelayMs. */
 export class Saver {
   private timer: ReturnType<typeof setTimeout> | null = null;

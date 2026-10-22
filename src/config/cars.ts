@@ -18,10 +18,10 @@ export interface CarDef {
 }
 
 export const CARS: readonly CarDef[] = [
-  { id: "2109", img: "cars/vaz-2109.svg", cls: 1.2, plateX: 50, plateY: 76.4, plateW: 15 },
-  { id: "vesta", img: "cars/lada-vesta.svg", cls: 1.4, plateX: 50, plateY: 76.4, plateW: 15 },
-  { id: "merc", img: "cars/mercedes-e.svg", cls: 2.2, plateX: 50, plateY: 72.3, plateW: 15 },
-  { id: "lambo", img: "cars/lamborghini.svg", cls: 4, plateX: 50, plateY: 69.6, plateW: 15 },
+  { id: "2109", img: "cars/vaz-2109.svg", cls: 1.2, plateX: 50, plateY: 73.6, plateW: 15 },
+  { id: "vesta", img: "cars/lada-vesta.svg", cls: 1.4, plateX: 50, plateY: 73.6, plateW: 15 },
+  { id: "merc", img: "cars/mercedes-e.svg", cls: 2.2, plateX: 50, plateY: 69.6, plateW: 15 },
+  { id: "lambo", img: "cars/lamborghini.svg", cls: 4, plateX: 50, plateY: 66.8, plateW: 15 },
 ];
 
 /** Номер США почти квадратный: его ширина = plateW × этот множитель. */
