@@ -11,8 +11,6 @@ const CLOUD_KEY = "nomernoy-perekup-mock-cloud";
 const SCORE_KEY = "nomernoy-perekup-mock-score";
 const REVIEW_KEY = "nomernoy-perekup-mock-reviewed";
 
-const params = new URLSearchParams(location.search);
-
 function store(key: string, value?: string): string | null {
   try {
     if (value !== undefined) localStorage.setItem(key, value);
@@ -47,6 +45,7 @@ function fakeAd(title: string): Promise<void> {
 }
 
 export function createMockPlatform(): Platform {
+  const params = new URLSearchParams(location.search);
   let authorized = !params.has("guest");
 
   return {
