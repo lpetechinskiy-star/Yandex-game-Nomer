@@ -1,7 +1,7 @@
 /** Источник случайных чисел в [0, 1). В тестах подменяется на детерминированный. */
 export type Rng = () => number;
 
-export const defaultRng: Rng = Math.random;
+export const defaultRng: Rng = () => Math.random();
 
 export function pick<T>(rng: Rng, items: readonly T[]): T {
   return items[Math.floor(rng() * items.length)];

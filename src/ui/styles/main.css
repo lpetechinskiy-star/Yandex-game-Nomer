@@ -88,7 +88,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 @media (max-width:760px),(max-height:520px){
   .cards3{gap:8px}
   .ccard{padding:10px;gap:8px}.ccard h3{font-size:13px}
-  .lbtn{font-size:15px;padding:12px 4px}.bbtn{font-size:14px;gap:6px;padding:11px 4px;flex-wrap:wrap}.bbtn .rg{font-size:14px}
+  .lbtn{font-size:clamp(12px,3.7vw,15px);padding:12px 2px;min-width:0;overflow-wrap:anywhere}.bbtn{font-size:14px;gap:6px;padding:11px 4px;flex-wrap:wrap}.bbtn .rg{font-size:14px}
   .cash{font-size:16px;padding:16px 18px}.act{font-size:15px;padding:16px 8px}.act svg{width:20px;height:20px}.duo{gap:8px}
 }
 
