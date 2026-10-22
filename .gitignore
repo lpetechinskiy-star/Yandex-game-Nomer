@@ -1,0 +1,6 @@
+node_modules/
+dist/
+build/
+.zip-check/
+*.log
+.DS_Store
